@@ -1,106 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adriana Machado</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
+    <!--INICIO GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!--FIM GOOGLE FONTS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!--FONT ICONS-->
+     <!-- <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/css/devicon.min.css">
+
+     <!--FIM FONT ICONS-->
+     <link rel="stylesheet" href="style.css">
+
+    <title>Adriana Machado</title>
+</head>
 <body>
+    
     <header>
-        <h1 class="nome_title">Adriana Machado</h1>
-        <img id="img_perfil" src="./img/img_perfil.jpg"
-            alt="Imagem de Adriana Lidiane machado da Rosa: Mulher de pele branca de estatura baixa, seu é cabelo 
-            cacheado no tom castanho igual seus olhos, seu rosto é redondo por causa das bochechas e coberto por pintas.">
-        <nav>
-            <ul class="navegacao">
-                <li>
-                    <a href="index.html">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="project.html">Projetos</a>
-                </li>
-                <!-- <li>
-                    <a href="artigos.html">Artigos</a>
-                </li> -->
-            </ul>
-        </nav>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img id="img-logo_am" src="assets/img/logos/logo AM.png" alt="Logo com as letras A e M, com as cores roxo, rosa e azul com branco.">
+                </a>
+            </div><!--logo---->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div><!--interface-->
     </header>
 
     <main>
-        <section>
-            <div class="conteudo">
-                <div class="container-descricao">
-                    <h1>Sobre mim</h1>
-                    <br>
-                    <p>
-                        Sou uma pessoa que gosta de atividades divertidas e desafiadoras, gosto de praticar esportes
-                        como
-                        andar de bicicleta, pilates e algumas vezes
-                        Jiu-jitsu, sou proativa e gosto de ajudar o próximo, não posso dizer que sou introvertida ou
-                        extrovertida, mas sim uma pessoa que lida
-                        bem com a adaptação.<br>
-                        Sobre o ambiente de trabalho, gosto de estar em um ambiente amigável, onde exista respeito e
-                        diversidade, trabalhos em equipe e
-                        orientação quando necessário é um ponto bastante importante para mim, empresas que buscam ajudar
-                        a
-                        comunidade e disseminar o conhecimento
-                        são o nosso futuro.
-                    </p>
-                    <br>
-                    <h2>Experiência profissional</h2>
-                    <br>
-                    <p>
-                        Minhas experiências profissionais são relacionadas ao trabalho freelancer que realizei
-                        como auxiliar de cozinha e garçonete, trabalhei com uma equipe de estrangeiros que
-                        falavam em espanhol, meu trabalho consistia em manter o ambiente de trabalho limpo e
-                        organizado, auxiliar na produção dos alimentos e atendimento ao cliente quando necessário.
-                    </p>
-                </div>
+        <section class="topo-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>BEM VINDO AO MEU PORTIFÓLIO<span>!</span></h1>
+                        <p>Neste espaço, você encontrará informações detalhadas sobre mim,
+                         minhas <br> habilidades e os projetos que realizei.
+                         Prepare-se para mergulhar em uma
+                         <br> jornada que explora minha paixão pelo front-end.
+                        </p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato!</button>
+                            </a>
+                        </div><!--btn-contato-->
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img id="img-perfil" src="assets/img/img_perfil.jpg" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--Flex-->
+            </div><!--interface-->
+        </section> <!--topo-site-->
 
-                <div class="conteiner_cursos">
-                    <img id="monster_roxo" src="./img/aliens-roxo.png"
-                        alt="Imagem de um monstro roxo, com dois olhos, sem boca, com o corpo redondo e suas pernas são igual de um polvo.">
-                    <ul>
-                        <h2 id="title_cursos">Cursos</h2>
-                        <br>
-                        <li>Programação para internet com HTML5 e CSS3-DIO</li>
-                        <li>Programação orientado a objetos-DIO</li>
-                        <li>Programação para internet com JavaScript-DIO</li>
-                        <li>Fundamentos do CSS-DIO</li>
-                        <li>Estruturando seu HTML + formatações-DIO</li>
-                        <li>Orientação a Objetos com JavaScript-DIO</li>
-                        <li>Trabalhando com formulários-DIO</li>
-                        <li>Trabalhando com Mídias-DIO</li>
-                        <li>Introdução a criação de websites com HTML5 e CSS3-DIO</li>
-                        <li>Lógica de programação com Dart-Udemy</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <section class="habilidades">
+            <div class="interface">
+                <h2 class="titulos">Minhas <span>HABILIDADES!</span></h2>
+                <div class="flex">
+                    <div class="habilidades-box">
+                        <img class="icons" src="assets/mycollectionIcons/icons8-html-64.png" alt="Icone da linguagem HTML">
+                        <h3>HTML</h3>
+                        <p>Hypertext Markup Language: É a linguagem utilizada para criar a estrutura e o conteúdo das páginas da web, usando tags para definir elementos como texto, imagens e links.</p>
+                    </div><!--habilidades-box-->
+                    <div class="habilidades-box">
+                        <img class="icons" src="assets/mycollectionIcons/icons8-css-filetype-64.png" alt="Icone da linguagem CSS">
+                        <h3>CSS</h3>
+                        <p>Cascading Style Sheets: É a linguagem usada para estilizar e formatar elementos HTML em uma página da web, permitindo definir cores, fontes e layout para tornar as páginas visualmente atraentes.</p>
+                    </div><!--habilidades-box-->
+                    <div class="habilidades-box">
+                        <img class="icons" src="assets/mycollectionIcons/icons8-js-64.png" alt="Icone da linguagem JS">
+                        <h3>JS</h3>
+                        <p>JavaScript: É uma linguagem de programação usada para tornar as páginas da web interativas e dinâmicas, permitindo adicionar funcionalidades como validação de formulários, animações e interação com o usuário.</p>
+                    </div><!--habilidades-box-->
+                    <div class="habilidades-box">
+                        <img class="icons" src="assets/mycollectionIcons/icons8-github-64.png" alt="Icone da plataforma GitHub">
+                        <h3>GitHub</h3>
+                        <p>GitHub é uma plataforma online que permite aos desenvolvedores hospedar e compartilhar códigos-fonte, colaborar com outros desenvolvedores, revisar e gerenciar mudanças no código, e controlar versões de projetos de software usando o Git, um sistema de controle de versão distribuído.</p>
+                    </div><!--habilidades-box-->
+                </div><!--Flex-->
+            </div><!--interface-->
+        </section><!--habilidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img class="img-sobre_mim" src="assets/img/img-animada.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU ADRIANA MACHADO.</span></h2>
+                        <p>
+                            Sou uma pessoa que gosta de atividades divertidas e desafiadoras, gosto de praticar esportes
+                            como
+                            andar de bicicleta, pilates e algumas vezes
+                            Jiu-jitsu, sou proativa e gosto de ajudar o próximo, não posso dizer que sou introvertida ou
+                            extrovertida, mas sim uma pessoa que lida
+                            bem com a adaptação.
+                        </p>
+                        <p> 
+                            Sobre o ambiente de trabalho, gosto de estar em um ambiente amigável, onde exista respeito e
+                            diversidade, trabalhos em equipe e
+                            orientação quando necessário é um ponto bastante importante para mim, empresas que buscam ajudar
+                            a
+                            comunidade e disseminar o conhecimento
+                            são o nosso futuro.
+                        </p>
+                        <div class="btn-social">
+                            <button>
+                                <a class="social-link" href="https://github.com/AdrianaLMR" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/mycollectionIcons/rede_social-github-.png" alt="Imagem do ícone do Github">
+                                    <span>GitHub</span>
+                                </a>
+                            </button>
+                            <button>
+                                <a class="social-link" href="https://www.linkedin.com/in/adriana-lidiane-machado-da-rosa-0451ab22a" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/mycollectionIcons/rede_social-linkedin.png" alt="Imagem do ícone do Linkedin">
+                                    <span>Linkedin</span>
+                                </a>
+                            </button>
+                            <button>
+                                <a class="social-link" href="mailto:trevenlynk038@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/mycollectionIcons/rede_social-email.png" alt="Imagem do ícone do E-mail">
+                                    <span>E-mail</span>
+                                </a>
+                            </button>
+                            <button>
+                                <a class="social-link" href="https://icons8.com.br/icon/16713/whatsapp" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/mycollectionIcons/rede_social-numero-contato.png" alt="Imagem do ícone do celular (contato)">
+                                    <span>Celular</span>
+                                </a>
+                            </button>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
     </main>
-
-    <footer>
-        <a href="https://github.com/AdrianaLMR" target="_blank" rel="noopener noreferrer">
-            <img src="./img/github.svg" alt="Imagem SVG do ícone do Github">
-            <p>Github</p>
-        </a>
-        <a href="https://www.linkedin.com/in/adriana-lidiane-machado-da-rosa-0451ab22a" target="_blank"
-            rel="noopener noreferrer">
-            <img src="./img/linkedin.svg" alt="Imagem SVG do ícone do Linkedin">
-            <p>Linkedin</p>
-        </a>
-        <a href="mailto:trevenlynk038@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="./img/email_white_48dp.svg" alt="Imagem SVG do ícone do E-mail">
-            <p>E-mail</p>
-        </a>
-        <a href="https://icons8.com.br/icon/16713/whatsapp" target="_blank" rel="noopener noreferrer">
-            <img src="./img/icons8-whatsapp.svg" alt="Imagem SVG do ícone do whatsapp">
-            <p>Celular</p>
-        </a>
-    </footer>
 </body>
-
 </html>
