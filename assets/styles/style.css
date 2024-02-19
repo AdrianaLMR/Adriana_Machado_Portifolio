@@ -7,6 +7,7 @@
 }
 
 body{
+    margin-top: 15%;
     background-color: #000;
     height: 100vh;
 }
@@ -45,7 +46,11 @@ h2.titulos span{
 
 /*ESTILO CABEÇALHO*/
 header{
-   padding: 40px 4%;
+   padding: 10px 4%;
+   background-color: #000;
+   width: 100%;
+   position: fixed;
+   top: 0;
 }
 
 header > .interface{
@@ -83,28 +88,28 @@ header nav ul li{
 
 /*ESTILO DO TIPO DO SITE*/
 
-section.topo-site{
+section #topo-site{
     padding: 40px 4%;
 }
 
-section.topo-site .flex{
+section#topo-site .flex{
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-site .txt-topo-site h1{
+#topo-site .txt-topo-site h1{
     color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-.topo-site .txt-topo-site h1 span{
+#topo-site .txt-topo-site h1 span{
     color: #792071;
     font-size: 60px;
 }
 
-.topo-site .txt-topo-site p{
+#topo-site .txt-topo-site p{
     color: #fff;
     font-size: 20px;
     margin: 40px 0px;
@@ -112,14 +117,14 @@ section.topo-site .flex{
 
 /*ESTILO HABILIDADES*/
 
-section.habilidades{
+section#habilidades{
     padding: 40px 1%;
 }
-section.habilidades .flex{
+section#habilidades .flex{
     gap: 60px;
 }
 
-.habilidades .habilidades-box{
+#habilidades .habilidades-box{
     color: #fff;
     padding: 40px;
     margin-top: 35px;
@@ -127,45 +132,45 @@ section.habilidades .flex{
     transition: .2s;
 }
 
-.habilidades .habilidades-box:hover{
+#habilidades .habilidades-box:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px #a31e98a6;
 }
 
-.habilidades .habilidades-box .icons{
+#habilidades .habilidades-box .icons{
     width: 90px;
 }
 
-.habilidades .habilidades-box h3 {
+#habilidades .habilidades-box h3 {
     margin: 15px 0px;
 }
 
 /*ESTILO DO SOBRE*/
-section.sobre{
+section#sobre{
     padding: 40px 4%;
 }
 
-section.sobre .flex{
+section#sobre .flex{
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
+#sobre .txt-sobre{
     color: #fff;
 }
 
-.sobre .txt-sobre h2 span{
+#sobre .txt-sobre h2 span{
     color: #792071;
     display: block;
 }
 
-.sobre .txt-sobre p{
+#sobre .txt-sobre p{
     padding: 5px 5%;
     margin: 20px 0;
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+#sobre .txt-sobre .btn-social button{
     margin: 0 10px;
     width: 60px;
     height: 60px;
@@ -184,14 +189,14 @@ section.sobre .flex{
 }
 
 /*Estilo portifolio*/
-section.portifolio{
+section#portifolio{
     padding: 100px 4%;
 }
 
-section.portifolio h2{
+section#portifolio h2{
     margin-bottom: 30px;
 }
-section.portifolio .projetos{
+section#portifolio .projetos{
     justify-content: space-around;
 }
 .img-port {
@@ -221,6 +226,21 @@ section.portifolio .projetos{
     transition: .2s;
 }
 
+/*FOOTER*/
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: #792071; 
+    margin: 0;
+    text-align: center;
+
+}
+
+.text-footer p {
+    color: #fff; 
+    font-size: 16px;
+}
 
 
 /*IMAGENS*/
@@ -242,4 +262,3 @@ section.portifolio .projetos{
     width: 200px;
     border-radius: 100px;
 }
-

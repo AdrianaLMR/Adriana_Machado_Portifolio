@@ -1,0 +1,109 @@
+@media screen and (max-width:1020px){
+    /*ESTILO GERAL*/
+
+    .flex {
+        flex-direction: column;
+    }
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+    
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop, .btn-contato, .logo{
+        display: none;
+    }
+
+   /*TOPO DO SITE*/
+   .topo-site .txt-topo-site h1{
+    font-size: 39px;
+    line-height: 40px;
+    }
+
+    .topo-site .txt-topo-site h1 span{
+        font-size: 40px;
+    }
+   
+    section.topo-site{
+        padding: 10px 8%;
+    }
+
+    .topo-site .txt-topo-site p{
+        font-size: 15px;
+        margin: 40px 0px;
+    } 
+
+    section.topo-site #img-perfil{
+        width: 250px;
+        border-radius: 40px;
+    }
+    
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre_mim{
+        width: 300px;
+        border-radius: 100px;
+    }
+
+    /*HABILIDADES*/
+    section.habilidades{
+        padding: 40px 8%;
+    }
+    
+    .habilidades .habilidades-box{
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .habilidades .habilidades-box .icons{
+        width: 55px;
+    }
+    
+    .habilidades .habilidades-box h3 {
+        margin: 15px 0px;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 30px 8%;
+    }
+
+    .img-port img {
+        width: 300px;
+    }
+
+    /*FOOTER*/
+    .rodape .flex{
+        padding: 10px; 
+        align-items: centers;
+    }
+    
+    .rodape .flex .text-footer p {
+        font-size: 16px;
+    }
+
+  
+   
+}
+
+/* @media screen and (max-width:995  ){
+    
+} */
