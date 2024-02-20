@@ -97,6 +97,26 @@
     }
 }
 
-/* @media screen and (max-width:995  ){
-    
-} */
+@media screen and (max-width:884px){
+    section#habilidades .flex{
+        flex-direction: column;
+        padding: 20px 3%;
+    }
+}
+
+@media screen and (max-width:800px){
+    /* ESTILO GERAL*/
+
+    /*ESTILO CABEÇALHO*/
+   .menu-desktop, .btn-contato{
+        display: none;
+   }
+
+   /*ESTILO PORTIFOLIO*/
+   .img-port img {
+    width: 280px;
+    height: auto;
+}
+
+
+}
