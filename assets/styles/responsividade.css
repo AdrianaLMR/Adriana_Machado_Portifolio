@@ -1,55 +1,49 @@
 @media screen and (max-width:1020px){
     /*ESTILO GERAL*/
-
-    .flex {
-        flex-direction: column;
-    }
-    .topo-site .flex{
-        flex-direction: column-reverse;
-    }
-    
     h2.titulo {
         font-size: 34px;
         line-height: 30px;
     }
 
     /*CABEÇALHO*/
-    .menu-desktop, .btn-contato, .logo{
-        display: none;
+    header{
+        padding: 10px 2%;
+        background-color: #000000;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    #img-logo_am{
+        width: 60px;
     }
 
    /*TOPO DO SITE*/
-   .topo-site .txt-topo-site h1{
-    font-size: 39px;
-    line-height: 40px;
+   section #topo-site{
+    padding: 10px 8%;
     }
-
-    .topo-site .txt-topo-site h1 span{
+    #topo-site .txt-topo-site h1 span{
         font-size: 40px;
     }
-   
-    section.topo-site{
-        padding: 10px 8%;
-    }
 
-    .topo-site .txt-topo-site p{
+    #topo-site .txt-topo-site p{
         font-size: 15px;
         margin: 40px 0px;
     } 
 
-    section.topo-site #img-perfil{
-        width: 250px;
+    #img-perfil{
+        width: 200px;
         border-radius: 40px;
     }
     
     /* SOBRE */
-    section.sobre {
-        padding: 80px 8%;
+    section#sobre{
+        padding: 40px 4%;
     }
 
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
+    #sobre .txt-sobre h2 {
+        font-size: 30px;
         text-align: center;
     }
     
@@ -63,27 +57,26 @@
     }
 
     /*HABILIDADES*/
-    section.habilidades{
-        padding: 40px 8%;
+    section #habilidades{
+        padding: 40px 4%;
     }
     
-    .habilidades .habilidades-box{
-        display: inline-block;
+    #habilidades .habilidades-box{
         text-align: center;
         padding: 10px;
     }
     
-    .habilidades .habilidades-box .icons{
-        width: 55px;
+    #habilidades .habilidades-box .icons{
+        width: 70px;
     }
     
-    .habilidades .habilidades-box h3 {
-        margin: 15px 0px;
+    #habilidades .habilidades-box h3 {
+       display: none;
     }
-
+   
     /* PORTFÓLIO */
-    section.portfolio {
-        padding: 30px 8%;
+    section #portfolio {
+        padding: 30px 4%;
     }
 
     .img-port img {
@@ -91,6 +84,9 @@
     }
 
     /*FOOTER*/
+    footer{
+        width: 100%;
+    }
     .rodape .flex{
         padding: 10px; 
         align-items: centers;
@@ -99,9 +95,6 @@
     .rodape .flex .text-footer p {
         font-size: 16px;
     }
-
-  
-   
 }
 
 /* @media screen and (max-width:995  ){
