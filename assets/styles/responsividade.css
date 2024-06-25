@@ -1,4 +1,5 @@
-@media screen and (max-width:1020px){
+@media screen and (max-width:1020px) {
+
     /*ESTILO GERAL*/
     h2.titulo {
         font-size: 34px;
@@ -6,7 +7,7 @@
     }
 
     /*CABEÇALHO*/
-    header{
+    header {
         padding: 10px 2%;
         background-color: #000000;
         width: 100%;
@@ -15,30 +16,31 @@
         z-index: 1000;
     }
 
-    #img-logo_am{
+    #img-logo_am {
         width: 60px;
     }
 
-   /*TOPO DO SITE*/
-   section #topo-site{
-    padding: 10px 8%;
+    /*TOPO DO SITE*/
+    section #topo-site {
+        padding: 10px 8%;
     }
-    #topo-site .txt-topo-site h1 span{
+
+    #topo-site .txt-topo-site h1 span {
         font-size: 40px;
     }
 
-    #topo-site .txt-topo-site p{
+    #topo-site .txt-topo-site p {
         font-size: 15px;
         margin: 40px 0px;
-    } 
+    }
 
-    #img-perfil{
+    #img-perfil {
         width: 200px;
         border-radius: 40px;
     }
-    
+
     /* SOBRE */
-    section#sobre{
+    section#sobre {
         padding: 40px 4%;
     }
 
@@ -46,34 +48,34 @@
         font-size: 30px;
         text-align: center;
     }
-    
-    .btn-social{
+
+    .btn-social {
         text-align: center;
     }
 
-    .img-sobre_mim{
+    .img-sobre_mim {
         width: 300px;
         border-radius: 100px;
     }
 
     /*HABILIDADES*/
-    section #habilidades{
+    section #habilidades {
         padding: 40px 4%;
     }
-    
-    #habilidades .habilidades-box{
+
+    #habilidades .habilidades-box {
         text-align: center;
         padding: 10px;
     }
-    
-    #habilidades .habilidades-box .icons{
+
+    #habilidades .habilidades-box .icons {
         width: 70px;
     }
-    
+
     #habilidades .habilidades-box h3 {
-       display: none;
+        display: none;
     }
-   
+
     /* PORTFÓLIO */
     section #portfolio {
         padding: 30px 4%;
@@ -84,39 +86,148 @@
     }
 
     /*FOOTER*/
-    footer{
+    footer {
         width: 100%;
     }
-    .rodape .flex{
-        padding: 10px; 
+
+    .rodape .flex {
+        padding: 10px;
         align-items: centers;
     }
-    
+
     .rodape .flex .text-footer p {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width:884px){
-    section#habilidades .flex{
+
+ @media screen and (min-width:760px) and (max-width: 900px) {
+    /* ESTILO GERAL*/
+    p {
+        font-size: 24px;
+    }
+
+    /*ESTILO CABEÇALHO*/
+    .menu-desktop {
+        display: none;
+    }
+    
+    .btn-contato {
+        width: 10px;
+    }
+
+    section#topo-site{
+        padding: 50px 4%;
+        display: flex;
+        gap: 6%;
+    }
+    
+    section#topo-site .flex{
+        align-items: center;
+        justify-content: center;
+    }
+    
+   #topo-site .txt-topo-site h1{
+        color: #fff;
+        font-size: 40px; 
+        /* line-height: 50px; */
+    }
+    
+    #topo-site .txt-topo-site h1 span{
+        color: #792071;
+        font-size: 45px;
+    } 
+    
+    #topo-site .txt-topo-site p{
+        color: #fff;
+        font-size: 24px;
+    }
+
+    #img-perfil{
+        margin-top: 10px;
+        width: 80%;
+        border: 0;
+        border-radius: 90px;
+    }
+
+    .btn-contato button {
+        width: 200px;
+        padding: 25px 2%;
+    } 
+
+    /*SECTION HABILIDADES*/
+    section#habilidades .flex {
+        flex-direction: column;
+        padding: 20px 3%;
+    
+    }
+} 
+
+@media screen and (max-width:760px) {
+    /* ESTILO GERAL*/
+    p {
+        font-size: 16px;
+    }
+
+    /*ESTILO CABEÇALHO*/
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-contato-cabecalho button {
+        width: 100%;
+    } 
+
+    .btn-contato-cabecalho {
+        width: 50%;
+    }
+
+    /* ESTILO TOPO-SITE */
+    section#topo-site{
+        margin-left: 5%;
+        /* padding: 100px 4%; */
+        display: flex;
+    }
+    
+    section#topo-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 6%;
+    }
+    
+    #topo-site .txt-topo-site h1{
+        margin-top: 10%;
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    #topo-site .txt-topo-site h1 span{
+        color: #792071;
+        font-size: 45px;
+    }
+    
+    #topo-site .txt-topo-site p{
+        color: #fff;
+    }
+
+    #img-perfil{
+        margin-top: 40%;
+        width: 100%;
+        border: 0;
+        border-radius: 90px;
+    }
+
+    .btn-contato button {
+        width: 90%;
+        padding: 10px 4%;
+    } 
+
+    /*SECTION HABILIDADES*/
+    section#habilidades .flex {
         flex-direction: column;
         padding: 20px 3%;
     }
-}
-
-@media screen and (max-width:800px){
-    /* ESTILO GERAL*/
-
-    /*ESTILO CABEÇALHO*/
-   .menu-desktop, .btn-contato{
-        display: none;
-   }
-
-   /*ESTILO PORTIFOLIO*/
-   .img-port img {
-    width: 280px;
-    height: auto;
-}
 
 
 }
