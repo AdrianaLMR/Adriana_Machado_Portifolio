@@ -172,8 +172,8 @@
         padding: 25px 2%;
     }
 
-     /*SECTION SOBRE MIM*/
-     section#sobre .flex {
+    /*SECTION SOBRE MIM*/
+    section#sobre .flex {
         display: inline-block;
     }
 
@@ -287,5 +287,25 @@
         padding: 20px 3%;
     }
 
+    /*Estilo portifolio*/
+    section#portifolio {
+        padding: 40px 4%;
+    }
 
+    section#portifolio .projetos{
+        justify-content: space-around;
+    }
+
+    .projetos-port {
+        display: inline-block;
+        margin: 10px;
+        padding: 40px 4%;
+        text-align: center;
+    }
+
+    .projetos-port img {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
 }
