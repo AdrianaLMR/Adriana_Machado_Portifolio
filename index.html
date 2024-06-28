@@ -177,17 +177,103 @@
             <div class="interface">
                 <h2 class="titulos">Meus <span>Projetos!</span></h2>
                 <div class="projetos">
+
+                    <!-- Todo List -->
+                    <div class="projetos-port">
+                        <h2>Todo List</h2>
+                        <p>
+                            O projeto Todo List ajuda na gestão de tarefas pessoais, oferecendo uma interface interativa
+                            e responsiva.
+                            <br><br>
+                            Utilizamos React, hooks como useState e useEffect, axios para requisições HTTP e SweetAlert2
+                            para modais e alertas. As principais funcionalidades incluem adicionar, remover e marcar
+                            tarefas, busca por texto, filtragem por categoria e ordenação alfabética. As tarefas são
+                            salvas no localStorage para persistência dos dados.
+                            <br><br>
+                            A interface é responsiva e fornece feedback visual com SweetAlert2 durante as interações.
+                        </p>
+                        <img src="assets/img/todo-list-img.jpg" alt="Imagem do projeto Todo List">
+                    </div><!--projetos-port-->
+
+                    <!-- Relógio Digital Dinâmico -->
+                    <div class="projetos-port">
+                        <h2>Relógio Digital Dinâmico</h2>
+                        <p>Este projeto é um relógio digital desenvolvido com HTML, CSS e JavaScript, exibindo horas, minutos e segundos em tempo real. Ele demonstra fundamentos de desenvolvimento web e manipulação dinâmica de elementos.</p>
+                        <br><br>
+                        <p>O arquivo HTML define a estrutura do relógio, estilizada pelo CSS para uma apresentação visual atraente. O JavaScript atualiza dinamicamente o conteúdo do relógio com a hora atual do sistema, assegurando precisão e funcionalidade contínua.</p>
+                        <br><br>
+                        <p>Utilizando npm e Moment.js, o projeto integra funcionalidades avançadas de fusos horários, permitindo exibir a hora em diversas regiões do mundo. Este projeto não só introduz o básico do desenvolvimento web, mas também oferece uma base flexível para expansões e personalizações futuras.</p>
+                        
+                        <img src="assets/img/Relogio-Dgital-Dinamico.png"
+                            alt="Imagem do projeto Relógio Digital Dinâmico">
+                    </div><!--projetos-port-->
+
+                    <!-- Busca Cep -->
+                    <div class="projetos-port">
+                        <h2>Busca Cep</h2>
+                        <p>O aplicativo desenvolvido em React permite aos usuários realizar buscas de endereços utilizando o CEP (Código de Endereçamento Postal). Os usuários inserem o CEP na caixa de entrada e iniciam a busca clicando no ícone correspondente.</p>
+                        <br><br>
+                        <p>O aplicativo faz uma requisição HTTP à API pública do ViaCEP (https://viacep.com.br/) para obter informações detalhadas do endereço associado ao CEP digitado. Após a busca, se o CEP for encontrado, são exibidos o logradouro (rua), bairro e cidade na interface. Caso o CEP não seja encontrado ou ocorra algum erro na busca, uma mensagem indicando isso é exibida para o usuário.</p>
+                        <br><br>
+                        <p>Para garantir a integridade dos dados exibidos, o aplicativo valida os campos necessários do endereço antes de mostrar os resultados. Além disso, utiliza o SweetAlert2 para feedback visual através de alertas em situações de erro, como quando o usuário não insere um CEP válido. O layout responsivo do aplicativo, utilizando componentes Grid do Material-UI, assegura uma boa experiência de usuário em diferentes dispositivos e tamanhos de tela.</p>
+
+                        <img src="assets/img/busca-cep-img.png" alt="Imagem do projeto Busca Cep">
+                    </div><!--projetos-port-->
+
+                    <!--Cronômetro e Temporizador-->
+                    <div class="projetos-port">
+                        <h2>Cronômetro e Temporizador</h2>
+                        <p>
+                            O cronômetro é uma aplicação que permite aos usuários medir o tempo decorrido com precisão.
+                            Utilizando elementos como a tag no HTML, ele exibe as horas, minutos e segundos, enquanto os
+                            botões "Iniciar", "Pausar" e "Parar" oferecem controle total sobre a contagem do tempo.
+                            <br><br>
+                            Por outro lado, o temporizador é uma ferramenta útil para definir intervalos de tempo
+                            específicos. Com botões predefinidos para 2, 5, 10, 15, 20 e 30 minutos, os usuários podem
+                            configurar facilmente o temporizador para atender às suas necessidades. Uma vez iniciado, o
+                            temporizador conta regressivamente até zero, emitindo um alerta quando o tempo definido é
+                            atingido.
+                        </p>
+                        <img src="assets/img/Cronometro-temporizador.png"
+                            alt="Imagem do projeto Cronômetro e Temporizador">
+                    </div><!--projetos-port-->
+
+                    <!--Formulário de Cadastro-->
+                    <div class="projetos-port">
+                        <h2>Formulário de Cadastro</h2>
+                        <p>O Formulário de Cadastro é essencial no projeto Cronômetro e Temporizador, permitindo que usuários se registrem para acessar recursos avançados. Desenvolvido com HTML, CSS e JavaScript, oferece uma experiência intuitiva.</p>
+                        <br><br>
+                        <p>O formulário inclui campos para nome completo, email válido, idade (para verificar maioridade), senha segura e confirmação de senha. Ele valida os dados inseridos para garantir que estejam completos e corretos, alertando sobre campos obrigatórios e requisitos específicos, como formatos de senha.</p>
+                        <br><br>
+                        <p>Após preencher corretamente todos os campos, os usuários são automaticamente redirecionados à página principal da aplicação. Esta funcionalidade garante uma experiência fluida e direta para os usuários ao se registrarem no sistema.</p>
+
+
+                        <img src="assets/img/formulario-cronometro-temporizador-img.png"
+                            alt="Imagem do projeto Formulário de Cadastro">
+                    </div><!--projetos-port-->
+
+                    <!--Álcool ou Gasolina-->
+                    <div class="projetos-port">
+                        <h2>Álcool ou Gasolina</h2>
+                        <p>O projeto Álcool ou Gasolina utiliza HTML, CSS e JavaScript para criar uma aplicação que ajuda os usuários a decidirem qual combustível é mais vantajoso financeiramente. Os usuários inserem os preços do álcool e da gasolina, e o JavaScript realiza cálculos para determinar e exibir dinamicamente qual opção oferece a melhor economia, junto com a diferença percentual entre os preços.</p>
+                        <br><br>
+                        <p>HTML é usado para estruturar a página, CSS para estilização visual e JavaScript para funcionalidades interativas, como captura de dados, cálculos e exibição de resultados. A aplicação exemplifica a aplicação prática dos conceitos aprendidos no curso superior em Tecnologia em Sistema para Internet, proporcionando uma ferramenta útil e acessível para os usuários.</p>
+
+                        <img src="assets/img/alcool-gasolina-img.png" alt="Imagem do projeto Álcool ou Gasolina">
+                    </div><!--projetos-port-->
+
                     <!-- spotyfy-clone -->
                     <div class="projetos-port">
+                        <h2>Spotify Clone</h2>
                         <p>
-                            <span><a href="https://github.com/AdrianaLMR/spotify_clone-Imersao_Alura">Spotify
-                                    Clone</a></span>
                             Este projeto foi criado durante a Imersão Front-end da Alura, com a participação dos
-                            professores da Alura
+                            professores da Alura.
+                            <br><br>
                             O projeto consiste em um clone simplificado da interface do Spotify, desenvolvido utilizando
                             HTML, CSS, JavaScript,
                             e integração com o JSON-Server para simular uma API fake e verificar o comportamento do
                             campo de input do projeto.
+                            <br><br>
                             Durante o desenvolvimento, utilizamos variáveis CSS para melhor organização e manutenção do
                             estilo.
                         </p>
@@ -196,43 +282,44 @@
 
                     <!-- Jogo Mario -->
                     <div class="projetos-port">
+                        <h2>Jogo Mario</h2>
                         <p>
-                            <span><a href="https://github.com/AdrianaLMR/Jogo_Mario">Jogo Mario</a></span>
                             O jogo foi criado com HTML para estruturação, CSS para estilização e JavaScript para as
                             animações, incluindo a movimentação do cenário,
-                            como as nuvens, e a movimentação do personagem principal, o Mario. O desenvolvimento
-                            envolveu a integração de interações precisas,
-                            como os momentos certo para pular os canos.
+                            como as nuvens, e a movimentação do personagem principal, o Mario.
+                            <br><br>
+                            O desenvolvimento envolveu a integração de interações precisas, como os momentos certo para
+                            pular os canos.
                         </p>
                         <img src="assets/img/mario.png" alt="Imagem do projeto do Mario">
                     </div><!--projetos-port-->
 
                     <!-- Game Pokémon -->
                     <div class="projetos-port">
+                        <h2>Game Pokémon</h2>
                         <p>
-                            <span><a href="https://github.com/AdrianaLMR/Game-pokemon">Game Pokémon</a></span>
                             O Game Pokemom foi desenvolvido utilizando as linguagens HTML, CSS e JavaScript. O principal
-                            objetivo
-                            do jogo é guiar o personagem Ash pela tela, usando as teclas direcionais do teclado, em
-                            busca dos Pokémon
-                            escondidos no campo. O jogador tem um tempo determinado para encontrar todos os Pokémon,
-                            além disso o jogo
-                            com recursos de áudio, os quais podem ser ativados ou desativados
+                            objetivo do jogo é guiar o personagem Ash pela tela, usando as teclas direcionais do
+                            teclado, em
+                            busca dos Pokémon escondidos no campo.
+                            <br><br>
+                            O jogador tem um tempo determinado para encontrar todos os Pokémon,
+                            além disso o jogo com recursos de áudio, os quais podem ser ativados ou desativados
                         </p>
                         <img src="assets/img/img_pokemon.png" alt="Imagem do projeto Projeto Game Pokémon">
                     </div><!--projetos-port-->
 
                     <!-- Calculadora IMC -->
                     <div class="projetos-port">
+                        <h2>Calculadora IMC</h2>
                         <p>
-                            <span><a href="https://github.com/AdrianaLMR/Calculadora-imc">Calculadora IMC</a></span>
                             A Calculadora IMC mede o índice de massa corporal do usúario,
                             o IMC é calculado dividindo o peso (em quilogramas) pela altura ao quadrado (em metros). O
                             usuário deve preencher os campo
                             corretamente e comparar o valor recebido com a tabela fornecida no projeto.
                         </p>
                         <img src="assets/img/CalculadoraIMC.png" alt="Imagem do projeto Calculadora IMC">
-                    </div>
+                    </div><!--projetos-port-->
 
                 </div><!--flex-->
             </div><!--interface-->
