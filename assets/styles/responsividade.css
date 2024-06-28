@@ -141,13 +141,9 @@
     header {
         background-color: #792071;
     }
+
     .menu-desktop {
         display: none;
-    }
-
-    .btn-contato-cabecalho {
-        width: 10px;
-        background-color: #db55d0;
     }
 
     section#topo-site {
@@ -184,12 +180,6 @@
         border-radius: 90px;
     }
 
-    .btn-contato button {
-        width: 200px;
-        padding: 25px 2%;
-        background-color: #db55d0;
-    }
-
     /*SECTION SOBRE MIM*/
     section#sobre .flex {
         display: inline-block;
@@ -204,6 +194,11 @@
         margin-bottom: 10%;
     }
 
+    .btn-contato button {
+        width: 90%;
+        padding: 10px 4%;
+    }
+    
     /*SECTION HABILIDADES*/
     section#habilidades .flex {
         flex-direction: column;
@@ -232,7 +227,7 @@
         height: auto;
         margin-top: 10%;
     }
-} 
+}
 
 @media screen and (max-width:760px) {
 
@@ -260,15 +255,6 @@
 
     .menu-desktop {
         display: none;
-    }
-
-    .btn-contato-cabecalho button {
-        width: 100%;
-        background-color: #db55d0;
-    }
-
-    .btn-contato-cabecalho {
-        width: 50%;
     }
 
     /* ESTILO TOPO-SITE */
