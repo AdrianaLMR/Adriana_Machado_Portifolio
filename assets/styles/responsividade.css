@@ -17,7 +17,7 @@
     /*CABEÇALHO*/
     header {
         padding: 10px 2%;
-        background-color: #000000;
+        background-color: #792071;
         width: 100%;
         position: fixed;
         top: 0;
@@ -84,13 +84,26 @@
         display: none;
     }
 
-    /* PORTFÓLIO */
-    section #portfolio {
-        padding: 30px 4%;
+    /*Estilo portifolio*/
+    section#portifolio {
+        padding: 40px 4%;
     }
 
-    .img-port img {
-        width: 300px;
+    section#portifolio .projetos {
+        justify-content: space-around;
+    }
+
+    .projetos-port {
+        display: inline-block;
+        margin: 10px;
+        padding: 40px 4%;
+        text-align: center;
+    }
+
+    .projetos-port img {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
     }
 
     /*FOOTER*/
@@ -125,12 +138,16 @@
     }
 
     /*ESTILO CABEÇALHO*/
+    header {
+        background-color: #792071;
+    }
     .menu-desktop {
         display: none;
     }
 
-    .btn-contato {
+    .btn-contato-cabecalho {
         width: 10px;
+        background-color: #db55d0;
     }
 
     section#topo-site {
@@ -170,6 +187,7 @@
     .btn-contato button {
         width: 200px;
         padding: 25px 2%;
+        background-color: #db55d0;
     }
 
     /*SECTION SOBRE MIM*/
@@ -193,12 +211,12 @@
 
     }
 
-      /*Estilo portifolio*/
-      section#portifolio {
+    /*Estilo portifolio*/
+    section#portifolio {
         padding: 40px 4%;
     }
 
-    section#portifolio .projetos{
+    section#portifolio .projetos {
         justify-content: space-around;
     }
 
@@ -214,7 +232,7 @@
         height: auto;
         margin-top: 10%;
     }
-}
+} 
 
 @media screen and (max-width:760px) {
 
@@ -236,12 +254,17 @@
     }
 
     /*ESTILO CABEÇALHO*/
+    header {
+        background-color: #792071;
+    }
+
     .menu-desktop {
         display: none;
     }
 
     .btn-contato-cabecalho button {
         width: 100%;
+        background-color: #db55d0;
     }
 
     .btn-contato-cabecalho {
@@ -314,7 +337,7 @@
         padding: 40px 4%;
     }
 
-    section#portifolio .projetos{
+    section#portifolio .projetos {
         justify-content: space-around;
     }
 
@@ -330,4 +353,8 @@
         height: auto;
         margin-top: 10%;
     }
+
+    /* .projetos-port h2 {
+        margin-top: -30px;
+    } */
 }
