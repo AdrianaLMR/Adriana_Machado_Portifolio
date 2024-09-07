@@ -214,7 +214,7 @@
     section#portifolio .projetos {
         justify-content: space-around;
     }
-
+    
     .projetos-port {
         display: inline-block;
         margin: 10px;

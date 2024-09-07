@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    color: #fff;
 }
 
 body {
@@ -24,12 +29,13 @@ body {
 
 h2.titulos {
     color: #fff;
-    font-size: 38px;
+    font-size: 40px;
     text-align: center;
 }
 
 h2.titulos span {
     color: #792071;
+    font-size: 40px;
 }
 
 section:target::before {
@@ -90,6 +96,8 @@ header nav ul li {
     transition: .2s;
 }
 
+
+
 .btn-contato-cabecalho button:hover {
     box-shadow: 0px 0px 8px #792071;
     transform: scale(1.05);
@@ -127,12 +135,10 @@ section#topo-site .flex {
 
 #topo-site .txt-topo-site p {
     color: #fff;
-    font-size: 20px;
     margin: 40px 0px;
 }
 
 .btn-contato button {
-    width: 30%;
     color: rgb(224, 230, 230);
     padding: 20px 4%;
     font-size: 16px;
@@ -142,7 +148,7 @@ section#topo-site .flex {
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
-}
+} 
 
 .btn-contato button:hover {
     box-shadow: 0px 0px 8px #792071;
@@ -156,19 +162,23 @@ section#topo-site .flex {
 }
 
 /*ESTILO HABILIDADES*/
-
 section#habilidades {
     padding: 20px 3%;
 }
 
-section.habilidades .flex {
-    gap: 60px;
+section#habilidades .flex {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cria 5 colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 #habilidades .habilidades-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #fff;
-    padding: 40px;
-    margin-top: 20px;
+    padding: 20px;
     border-radius: 20px;
     transition: .2s;
 }
@@ -180,10 +190,12 @@ section.habilidades .flex {
 
 #habilidades .habilidades-box .icons {
     width: 90px;
+    margin-bottom: 10px;
 }
 
 #habilidades .habilidades-box h3 {
-    margin: 15px 0px;
+    margin: 0;
+    text-align: center;
 }
 
 /*ESTILO DO SOBRE*/
@@ -212,14 +224,13 @@ section#sobre .flex {
 }
 
 #sobre .txt-sobre .btn-social button {
-    margin: 0 10px;
-    width: 60px;
+    margin-left: 5%;
+    width: 80px;
     height: 60px;
     border: none;
     border-radius: 50%;
     background-color: transparent;
     font-size: 16px;
-
 }
 
 .social-link {
@@ -234,23 +245,28 @@ section#sobre .flex {
     border-radius: 100px;
 }
 
-/*Estilo portifolio*/
+/* Estilo portifolio */
 section#portifolio {
     padding: 40px 4%;
 }
 
-section#portifolio .projetos {
-    justify-content: space-around;
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .projetos-port {
-    padding: 40px 5%;
-    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .projetos-port img {
-    margin: 10px;
-    width: 500px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -260,9 +276,10 @@ section#portifolio .projetos {
 
 .projetos-port h2 {
     color: #792071;
-    margin: 10px;
+    margin: 10px 0;
     font-size: 37px;
 }
+
 
 /*FOOTER*/
 footer {
@@ -276,5 +293,4 @@ footer {
 
 .text-footer p {
     color: #fff;
-    font-size: 16px;
 }
